@@ -1,0 +1,77 @@
+/* 1. Sidebar Main Container */
+#chat-nav-sidebar {
+    position: fixed; right: 0; top: 0; height: 100vh; background: #ffffff;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1); z-index: 2147483647;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
+    display: flex; flex-direction: column; overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+#chat-nav-sidebar.collapsed { transform: translateX(100%); }
+
+/* 2. Header (Anchor in Top Right) */
+#chat-nav-header { padding: 16px 16px 12px 16px; background: #ffffff; flex-shrink: 0; }
+#chat-nav-header h3 { 
+    margin: 0 0 12px 0; font-size: 15px; color: #202124; font-weight: 600; 
+    display: flex; justify-content: space-between; align-items: center; 
+}
+
+/* Header Anchor Button */
+.header-anchor-btn {
+    font-size: 14px; cursor: pointer; padding: 4px 8px; border-radius: 4px;
+    border: 1px solid #dadce0; transition: all 0.2s; color: #bdc1c6;
+}
+.header-anchor-btn.active { color: #9334e9; border-color: #9334e9; background: #f3e8ff; }
+.header-anchor-btn:hover { border-color: #9334e9; color: #9334e9; }
+
+#chat-nav-search-input { width: 100%; padding: 8px 12px; border: 1px solid #dadce0; border-radius: 6px; font-size: 13px; outline: none; }
+
+/* 3. Pinned Section (Locked Height) */
+#chat-nav-pinned-container {
+    height: 165px; flex-shrink: 0; overflow-y: auto; background-color: #f9f9f9; 
+    border-top: 1px solid #e8eaed; border-bottom: 2px solid #e8eaed;
+    margin-bottom: 12px; box-shadow: 0 4px 6px -4px rgba(0,0,0,0.1); position: relative; z-index: 10;
+}
+
+/* 4. Chat List (Flex Height) */
+#chat-nav-list-content {
+    flex: 1; overflow-y: auto; background-color: #f9f9f9; border-top: 1px solid #e8eaed;
+    margin-bottom: 16px; scroll-behavior: smooth;
+}
+
+.nav-section-title {
+    position: sticky; top: -1px; z-index: 20; padding: 10px 16px 6px 16px; 
+    font-size: 11px; color: #5f6368; font-weight: 800; background-color: #f9f9f9;
+}
+
+/* Chat Items */
+.chat-nav-item {
+    position: relative; display: flex; align-items: center; padding: 10px 16px; 
+    margin: 2px 8px; font-size: 13px; color: #3c4043; cursor: pointer; 
+    border-radius: 4px; transition: background 0.2s; border-left: 3px solid transparent;
+}
+.nav-item-text { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.chat-nav-item:hover { background-color: #f1f3f4; }
+.chat-nav-item.active { background-color: #e8f0fe; color: #1a73e8; font-weight: 600; border-left: 4px solid #1a73e8; }
+
+/* Buttons */
+.copy-btns-wrapper {
+    position: absolute; right: 8px; display: flex; gap: 6px; opacity: 0;
+    transition: opacity 0.2s; background: linear-gradient(to right, transparent, #f1f3f4 25%); padding-left: 15px;
+}
+.chat-nav-item:hover .copy-btns-wrapper { opacity: 1; }
+
+.action-btn { width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; border-radius: 4px; border: 1px solid #dadce0; background: #fff; cursor: pointer; }
+.copy-code-btn svg { width: 12px; height: 12px; fill: #5f6368; }
+.copy-code-btn.success { color: #34a853 !important; border-color: #34a853; }
+.pin-btn { color: #dadce0; }
+.pin-btn.active { color: #f4b400; border-color: #f4b400; }
+.unpin-btn { color: #ea4335; border-color: #f9d7d9; font-weight: bold; font-size: 14px; }
+
+/* Components */
+#chat-nav-resize-handle { position: absolute; left: 0; top: 0; width: 4px; height: 100%; cursor: ew-resize; }
+#chat-nav-toggle-btn {
+    position: fixed; top: 50%; transform: translateY(-50%); width: 24px; height: 40px;
+    background: #fff; border: 1px solid #dadce0; border-right: none; border-radius: 4px 0 0 4px;
+    cursor: pointer; display: flex; align-items: center; justify-content: center; z-index: 10000;
+}
+#chat-nav-toggle-btn.collapsed { right: 0 !important; }

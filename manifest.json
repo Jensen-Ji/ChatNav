@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "ChatNav",
+  "version": "2.0.0",
+  "description": "Efficiency-first sidebar for AI interfaces. Features Vim-style navigation, pinning, and single-anchor jumping.",
+  "author": "Jensen",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://gemini.google.com/*",
+        "https://chatgpt.com/*",
+        "https://www.doubao.com/*",
+        "https://www.qianwen.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon128.png",
+    "48": "icons/icon128.png",
+    "128": "icons/icon128.png"
+  }
+}
