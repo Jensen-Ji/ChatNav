@@ -42,5 +42,6 @@
 
 ## 🤝 Contribution / 贡献与反馈
 
-If you like this project, please give it a **Star** ⭐️. It means a lot to **Jensen冀**!
+If you like this project, please give it a **Star** ⭐️. It means a lot to **JensenJi**!
+
 如果你喜欢这个项目，请给一个 **Star** ⭐️，这是对作者最好的支持！
