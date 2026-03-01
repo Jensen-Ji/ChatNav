@@ -2,7 +2,7 @@
 
 > **Efficiency-first sidebar for AI interfaces.** Optimized for Gemini, ChatGPT, Doubao, and Qianwen.
 > **效率优先的 AI 对话增强侧边栏。** 原生适配 Gemini、ChatGPT、豆包及通义千问。
-
+![ChatNav Demo](./demo.gif)
 ---
 
 ## ✨ Features / 核心特性
@@ -46,3 +46,4 @@
 
 If you like this project, please give it a **Star** ⭐️. It means a lot to **Jensen-Ji**!
 如果你喜欢这个项目，请给一个 **Star** ⭐️，这是对作者最好的支持！
+
