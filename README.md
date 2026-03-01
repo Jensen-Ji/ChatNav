@@ -9,6 +9,8 @@
 
 - **📍 Single Anchor System / 单锚点瞬移**: Mark any position with `m` and jump back instantly with `'`. Perfect for long threads.
   按下 `m` 键在网页任何位置插旗，按下 `'` 键瞬间跳回。不再迷失在万字长文中。
+- **📋 One-click Code Copying / 一键代码复制**: Extract and copy code blocks directly from the sidebar. No more endless scrolling.
+  直接从侧边栏提取并一键复制所有代码块，无需在对话中反复上下翻找。
 - **⌨️ Vim-like Control / Vim 级操控**: Scroll with `j/k`, jump to top/bottom with `g/G`. Mouse-free experience.
   无需鼠标，通过 `j/k/g/G` 键盘流丝滑滚动。
 - **📌 Smart Pinning / 智能对话置顶**: Double-card layout. Lock key context to the top window.
@@ -42,6 +44,5 @@
 
 ## 🤝 Contribution / 贡献与反馈
 
-If you like this project, please give it a **Star** ⭐️. It means a lot to **JensenJi**!
-
+If you like this project, please give it a **Star** ⭐️. It means a lot to **Jensen-Ji**!
 如果你喜欢这个项目，请给一个 **Star** ⭐️，这是对作者最好的支持！
