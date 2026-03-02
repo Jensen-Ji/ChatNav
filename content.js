@@ -3,7 +3,28 @@
         'gemini.google.com': { userSelector: '.user-query-bubble-with-background', aiSelector: '.model-response-text', prefixToRemove: '你说' },
         'chatgpt.com': { userSelector: '[data-message-author-role="user"]', aiSelector: '[data-message-author-role="assistant"]', prefixToRemove: '' },
         'www.doubao.com': { userSelector: '[data-plugin-identifier="block_type:10000"].justify-end', aiSelector: '[data-plugin-identifier="block_type:10000"].justify-start', prefixToRemove: '' },
-        'www.qianwen.com': { userSelector: '.contentBox-t7l7vJ', aiSelector: '.contentBox-S3Nidm', prefixToRemove: '' }
+        'www.qianwen.com': { userSelector: '.contentBox-t7l7vJ', aiSelector: '.contentBox-S3Nidm', prefixToRemove: '' },
+        'www.kimi.com': { 
+            userSelector: '.chat-content-item-user .user-content', 
+            aiSelector: '.chat-content-item-assistant .markdown, .chat-content-item-assistant .segment-content-box', 
+            prefixToRemove: '' 
+        },
+        'kimi.moonshot.cn': { 
+            userSelector: '.chat-content-item-user .user-content', 
+            aiSelector: '.chat-content-item-assistant .markdown, .chat-content-item-assistant .segment-content-box', 
+            prefixToRemove: '' 
+        },
+
+        'yuanbao.tencent.com': { 
+            userSelector: '.agent-chat__list__item--human .hyc-content-text', 
+            aiSelector: '.agent-chat__speech-text .hyc-common-markdown, .agent-chat__speech-text .hyc-content-md', 
+            prefixToRemove: '' 
+        },
+        'chat.deepseek.com': { 
+            userSelector: '.fbb737a4', 
+            aiSelector: '.ds-markdown', 
+            prefixToRemove: '' 
+        }
     };
 
     const currentHost = window.location.hostname;
