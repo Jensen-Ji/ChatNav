@@ -1,7 +1,7 @@
 # ChatNav (AI Dialogue Assistant) 🚩
 
 > **Efficiency-first sidebar for AI interfaces.** Optimized for Gemini, ChatGPT, Doubao, and Qianwen.
-> **效率优先的 AI 对话增强侧边栏。** 原生适配 Gemini、ChatGPT、豆包及通义千问。
+> **效率优先的 AI 对话增强侧边栏。** 完美支持全球最热门的 AI 模型：Gemini, ChatGPT, DeepSeek, Kimi, 豆包, 通义千问, 腾讯元宝。
 ![ChatNav Demo](./demo.gif)
 ---
 
@@ -46,4 +46,5 @@
 
 If you like this project, please give it a **Star** ⭐️. It means a lot to **Jensen-Ji**!
 如果你喜欢这个项目，请给一个 **Star** ⭐️，这是对作者最好的支持！
+
 
